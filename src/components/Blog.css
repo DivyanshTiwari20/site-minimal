@@ -1,0 +1,95 @@
+/* Body and global styles */
+body {
+  background-color: #f5f5dc;
+  color: #000;
+  font-family: Arial, sans-serif;
+  margin: 0;       /* Removes default margin so content starts at the very top */
+  padding: 0;      /* Removes extra padding at the top */
+}
+
+/* Container for the entire blog page */
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  /* No extra padding at the top so it starts from the top of the page */
+  padding-top: 0;
+  padding-left: 20px;  /* optional left/right padding for breathing room */
+  padding-right: 20px; /* optional left/right padding for breathing room */
+}
+
+/* Header section */
+.blog-header {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.blog-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Link wrapping the name, removing underline */
+.home-link {
+  text-decoration: none;
+}
+
+/* Category filter buttons (text only, no button styling) */
+.category-filters {
+  margin-bottom: 20px;
+  border: none;
+  text-decoration: none;
+
+}
+
+.category-filters button {
+  background: none;
+  border: none;        /* Removes default border */
+  outline: none;       /* Removes focus outline */
+  appearance: none;    /* Removes default styling in some browsers */
+  -webkit-appearance: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+}
+
+.category-filters button:hover {
+  text-decoration: none !important;
+}
+
+
+/* Blog list container */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual blog post row */
+.blog-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer; /* changes mouse cursor on hover */
+}
+
+/* Extra horizontal spacing between date and title */
+.post-date {
+  margin-right: 40px; /* adjust as needed for spacing */
+
+}
+
+/* Make title bold and black */
+.post-title {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Dim viewed posts */
+.blog-post.viewed .post-title {
+  color: #888;
+}
